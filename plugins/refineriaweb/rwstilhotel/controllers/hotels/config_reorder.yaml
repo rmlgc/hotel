@@ -1,0 +1,4 @@
+title: Hotels
+modelClass: Refineriaweb\RwStilhotel\Models\Hotel
+toolbar:
+    buttons: reorder_toolbar

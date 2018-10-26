@@ -1,0 +1,10 @@
+name: Hotels
+form: $/refineriaweb/rwstilhotel/models/hotel/fields.yaml
+modelClass: Refineriaweb\RwStilhotel\Models\Hotel
+defaultRedirect: refineriaweb/rwstilhotel/hotels
+create:
+    redirect: 'refineriaweb/rwstilhotel/hotels/update/:id'
+    redirectClose: refineriaweb/rwstilhotel/hotels
+update:
+    redirect: refineriaweb/rwstilhotel/hotels
+    redirectClose: refineriaweb/rwstilhotel/hotels

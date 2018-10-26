@@ -1,0 +1,12 @@
+list: $/refineriaweb/rwstilhotel/models/room/columns.yaml
+modelClass: Refineriaweb\RwStilhotel\Models\Room
+title: Rooms
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'refineriaweb/rwstilhotel/rooms/update/:id'

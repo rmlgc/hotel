@@ -1,0 +1,32 @@
+fields:
+    name:
+        label: 'refineriaweb.rwstilhotel::default.label.name'
+        span: auto
+        type: text
+    slug:
+        label: 'refineriaweb.rwstilhotel::default.label.slug'
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    hotel:
+        label: 'refineriaweb.rwstilhotel::default.label.hotel_name'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    images:
+        label: 'refineriaweb.rwstilhotel::default.label.photos'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    descript:
+        label: 'refineriaweb.rwstilhotel::default.label.description'
+        size: large
+        span: full
+        type: richeditor

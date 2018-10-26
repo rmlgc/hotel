@@ -1,0 +1,7 @@
+columns:
+    name:
+        label: name
+        type: text
+    hotel_id:
+        label: hotel_id
+        type: number

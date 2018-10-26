@@ -1,0 +1,17 @@
+fields:
+    name:
+        label: 'refineriaweb.rwstilhotel::default.label.name'
+        span: auto
+        type: text
+    slug:
+        label: 'refineriaweb.rwstilhotel::default.label.slug'
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    description:
+        label: 'refineriaweb.rwstilhotel::default.label.description'
+        size: small
+        span: auto
+        type: richeditor

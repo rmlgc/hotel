@@ -1,0 +1,10 @@
+name: Amenities
+form: $/refineriaweb/rwstilhotel/models/amenity/fields.yaml
+modelClass: Refineriaweb\RwStilhotel\Models\Amenity
+defaultRedirect: refineriaweb/rwstilhotel/amenities
+create:
+    redirect: 'refineriaweb/rwstilhotel/amenities/update/:id'
+    redirectClose: refineriaweb/rwstilhotel/amenities
+update:
+    redirect: refineriaweb/rwstilhotel/amenities
+    redirectClose: refineriaweb/rwstilhotel/amenities

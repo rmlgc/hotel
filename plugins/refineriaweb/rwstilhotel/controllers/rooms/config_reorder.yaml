@@ -1,0 +1,4 @@
+title: Rooms
+modelClass: Refineriaweb\RwStilhotel\Models\Room
+toolbar:
+    buttons: reorder_toolbar

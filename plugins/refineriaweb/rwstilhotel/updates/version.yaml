@@ -1,0 +1,32 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table refineriaweb_rwstilhotel_hoteles'
+    - builder_table_create_refineriaweb_rwstilhotel_hoteles.php
+1.0.3:
+    - 'Updated table refineriaweb_rwstilhotel_hoteles'
+    - builder_table_update_refineriaweb_rwstilhotel_hoteles.php
+1.0.4:
+    - 'Created table refineriaweb_rwstilhotel_rooms'
+    - builder_table_create_refineriaweb_rwstilhotel_rooms.php
+1.0.5:
+    - 'Created table refineriaweb_rwstilhotel_amenities'
+    - builder_table_create_refineriaweb_rwstilhotel_amenities.php
+1.0.6:
+    - 'Created table refineriaweb_rwstilhotel_services'
+    - builder_table_create_refineriaweb_rwstilhotel_services.php
+1.0.7:
+    - 'Updated table refineriaweb_rwstilhotel_amenities'
+    - builder_table_update_refineriaweb_rwstilhotel_amenities.php
+1.0.8:
+    - 'Updated table refineriaweb_rwstilhotel_hoteles'
+    - builder_table_update_refineriaweb_rwstilhotel_hoteles_2.php
+1.0.9:
+    - 'Updated table refineriaweb_rwstilhotel_rooms'
+    - builder_table_update_refineriaweb_rwstilhotel_rooms.php
+1.0.10:
+    - 'relation hotel service'
+    - migration1010.php
+1.0.11:
+    - 'relation room amenities'
+    - migration1011.php

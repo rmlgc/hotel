@@ -1,0 +1,10 @@
+name: Rooms
+form: $/refineriaweb/rwstilhotel/models/room/fields.yaml
+modelClass: Refineriaweb\RwStilhotel\Models\Room
+defaultRedirect: refineriaweb/rwstilhotel/rooms
+create:
+    redirect: 'refineriaweb/rwstilhotel/rooms/update/:id'
+    redirectClose: refineriaweb/rwstilhotel/rooms
+update:
+    redirect: refineriaweb/rwstilhotel/rooms
+    redirectClose: refineriaweb/rwstilhotel/rooms

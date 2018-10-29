@@ -8,7 +8,7 @@ use Model;
 class Service extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
 
     /**
      * @var string The database table used by the model.
@@ -18,6 +18,13 @@ class Service extends Model
     /**
      * @var array Validation rules
      */
+
+    public $belongsToMany = [
+        'hotel' => [
+            'Refineriaweb\Rwstilhotel\Models\HotelService',
+        ],
+    ];
+
     public $rules = [
     ];
 }

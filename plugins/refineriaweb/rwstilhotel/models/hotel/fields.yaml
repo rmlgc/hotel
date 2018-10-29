@@ -1,54 +1,68 @@
-fields:
-    name:
-        label: 'refineriaweb.rwstilhotel::default.label.name'
-        span: auto
-        required: 1
-        type: text
-    slug:
-        label: 'refineriaweb.rwstilhotel::default.label.slug'
-        span: auto
-        hidden: 1
-        preset:
-            field: name
-            type: slug
-        type: text
-    phone:
-        label: 'refineriaweb.rwstilhotel::default.label.phone'
-        span: auto
-        type: text
-    email:
-        label: 'refineriaweb.rwstilhotel::default.label.email'
-        span: auto
-        type: text
-    address:
-        label: 'refineriaweb.rwstilhotel::default.label.address'
-        size: small
-        span: auto
-        type: richeditor
-    services:
-        label: 'refineriaweb.rwstilhotel::default.label.services'
-        nameFrom: services
-        descriptionFrom: description
-        span: full
-        type: relation
-        type: checkbox
-    description:
-        label: 'refineriaweb.rwstilhotel::default.label.description'
-        size: giant
-        span: full
-        type: richeditor
 tabs:
     fields:
+        name:
+            label: 'refineriaweb.rwstilhotel::default.label.name'
+            span: auto
+            required: 1
+            type: text
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
+        email:
+            label: 'refineriaweb.rwstilhotel::default.label.email'
+            span: auto
+            type: text
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
+        phone:
+            label: 'refineriaweb.rwstilhotel::default.label.phone'
+            span: auto
+            type: text
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
+        address:
+            label: 'refineriaweb.rwstilhotel::default.label.address'
+            size: small
+            span: auto
+            type: richeditor
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
+        description:
+            label: 'refineriaweb.rwstilhotel::default.label.description'
+            size: giant
+            span: auto
+            type: richeditor
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
+        slug:
+            label: 'refineriaweb.rwstilhotel::default.label.slug'
+            span: auto
+            hidden: 0
+            preset:
+                field: name
+                type: slug
+            type: text
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
+        services:
+            label: 'refineriaweb.rwstilhotel::default.label.services'
+            nameFrom: name
+            descriptionFrom: description
+            span: auto
+            type: relation
+            tab: 'refineriaweb.rwstilhotel::default.label.services'
+        room:
+            label: 'Room'
+            type: partial
+            path: field_rooms
+            tab: 'Room'
         images:
             label: 'refineriaweb.rwstilhotel::default.label.photos'
             mode: file
+            imageWidth: 160
+            imageHeight: 160
             useCaption: true
             thumbOptions:
                 mode: crop
                 extension: auto
             span: full
             type: fileupload
-            mode: image
-            imageHeight: 160
-            imageWidth: 160
-            tab: 'Tab 1'
+            tab: 'refineriaweb.rwstilhotel::default.label.photos'
+        settings:
+            label: 'url'
+            type: partial
+            path: field_settings
+            tab: 'url'

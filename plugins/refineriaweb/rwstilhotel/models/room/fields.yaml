@@ -10,12 +10,12 @@ fields:
             field: name
             type: slug
         type: text
-    hotel:
-        label: 'refineriaweb.rwstilhotel::default.label.hotel_name'
-        nameFrom: name
-        descriptionFrom: description
-        span: auto
-        type: relation
+    #hotel:
+    #    label: 'refineriaweb.rwstilhotel::default.label.hotel_name'
+    #    nameFrom: name
+    #    descriptionFrom: description
+    #    span: auto
+    #    type: relation
     images:
         label: 'refineriaweb.rwstilhotel::default.label.photos'
         mode: file

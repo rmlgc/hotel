@@ -24,11 +24,22 @@ class Hotel extends Model
      */
     public $rules = [
     ];
-    public $belongsTo = [
+    public $hasOne=[
+        'setting' => [
+            'Keios\Multisite\Models\Setting',
+        ]
+    ];
+    public $hasMany=[
+        'room' => [
+            'Refineriaweb\Rwstilhotel\Models\Room',
+        ]
+    ];
+    public $belongsToMany = [
         'services' => [
-            'refineriaweb\rwstilhotel\Models\Service',
-        ],
+            'Refineriaweb\Rwstilhotel\Models\Service',
+            'table' => 'refineriaweb_rwstilhotel_hotel_service',
 
+        ],
     ];
     public $attachMany = [
         'images' => 'System\Models\File'

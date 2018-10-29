@@ -1,5 +1,6 @@
 <?php return [
     'label' => [
+        'hotel' => 'hotel',
         'name' => 'name',
         'description' => 'description',
         'photos' => 'photos',

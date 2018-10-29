@@ -1,0 +1,18 @@
+# Record name
+setting:
+    label: url
+    manage:
+        list: $/keios/multisite/models/setting/columns.yaml
+        recordsPerPage: 10
+        form: $/keios/multisite/models/setting/fields.yaml
+    view:
+        form: $/keios/multisite/models/setting/fields.yaml
+        toolbarButtons: create|update|remove
+room:
+    label: Room
+    manage:
+        form: $/refineriaweb/rwstilhotel/models/room/fields.yaml
+        list: $/refineriaweb/rwstilhotel/models/room/columns.yaml
+    view:
+        list: $/refineriaweb/rwstilhotel/models/room/columns.yaml
+        toolbarButtons: create|delete

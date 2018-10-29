@@ -10,7 +10,7 @@ class BuilderTableCreateRefineriawebRwstilhotelServices extends Migration
         Schema::create('refineriaweb_rwstilhotel_services', function($table)
         {
             $table->engine = 'InnoDB';
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->string('name');
             $table->string('slug');
             $table->text('description')->nullable();
@@ -18,7 +18,7 @@ class BuilderTableCreateRefineriawebRwstilhotelServices extends Migration
             $table->timestamp('updated_at')->nullable();
         });
     }
-    
+
     public function down()
     {
         Schema::dropIfExists('refineriaweb_rwstilhotel_services');

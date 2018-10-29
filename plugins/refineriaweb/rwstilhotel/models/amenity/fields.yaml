@@ -1,10 +1,10 @@
 fields:
     name:
-        label: 'refineriaweb.rwstilhotel::lang.name.nombre'
+        label: 'refineriaweb.rwstilhotel::default.label.name'
         span: auto
         type: text
     description:
-        label: 'refineriaweb.rwstilhotel::lang.description.description'
+        label: 'refineriaweb.rwstilhotel::default.label.description'
         size: ''
         span: auto
         type: richeditor

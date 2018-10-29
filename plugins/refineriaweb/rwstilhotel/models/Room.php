@@ -28,9 +28,12 @@ class Room extends Model
         'hotel' => [
             'refineriaweb\rwstilhotel\Models\Hotel',
         ],
-
     ];
-
+    public $belongsToMany = [
+        'amenity' => [
+            'refineriaweb\rwstilhotel\Models\Hotel',
+        ],
+    ];
     public $attachMany = [
         'images' => 'System\Models\File'
     ];

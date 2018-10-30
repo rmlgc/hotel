@@ -2,13 +2,14 @@
 
 use Model;
 
+
 /**
  * Model
  */
 class Amenity extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
+
 
     /**
      * @var string The database table used by the model.
@@ -20,4 +21,14 @@ class Amenity extends Model
      */
     public $rules = [
     ];
+
+    public $belongsToMany = [
+        'room' => [
+            'Refineriaweb\Rwstilhotel\Models\RoomAmenity',
+        ],
+    ];
+
+    public function scopeHotel($query){
+        dd($query->get());
+    }
 }

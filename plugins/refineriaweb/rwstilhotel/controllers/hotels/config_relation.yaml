@@ -9,10 +9,23 @@ setting:
         form: $/keios/multisite/models/setting/fields.yaml
         toolbarButtons: create|update|remove
 room:
-    label: Room
+    label: 'refineriaweb.rwstilhotel::default.label.room'
     manage:
         form: $/refineriaweb/rwstilhotel/models/room/fields.yaml
         list: $/refineriaweb/rwstilhotel/models/room/columns.yaml
     view:
         list: $/refineriaweb/rwstilhotel/models/room/columns.yaml
-        toolbarButtons: create|delete
+        recordUrl: refineriaweb/rwstilhotel/rooms/update/:id
+        toolbarPartial: relation_toolbar_rooms
+services:
+    label: 'refineriaweb.rwstilhotel::default.label.services'
+    manage:
+        form: $/refineriaweb/rwstilhotel/models/service/fields.yaml
+        list: $/refineriaweb/rwstilhotel/models/service/columns.yaml
+        scope: hotel
+    view:
+        list: $/refineriaweb/rwstilhotel/models/service/columns.yaml
+        filter: $/refineriaweb/rwstilhotel/models/service/config_filter.yaml
+        recordUrl: refineriaweb/rwstilhotel/services/update/:id
+        toolbarButtons: create|link|unlink
+

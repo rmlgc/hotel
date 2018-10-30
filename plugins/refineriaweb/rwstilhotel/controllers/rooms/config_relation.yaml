@@ -1,0 +1,10 @@
+amenities:
+    label: 'refineriaweb.rwstilhotel::default.label.amenities'
+    manage:
+        form: $/refineriaweb/rwstilhotel/models/amenity/fields.yaml
+        list: $/refineriaweb/rwstilhotel/models/amenity/columns.yaml
+        showSearch: true
+    view:
+        list: $/refineriaweb/rwstilhotel/models/amenity/columns.yaml
+        toolbarButtons: link|unlink
+        showSearch: true

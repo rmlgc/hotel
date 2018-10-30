@@ -15,3 +15,12 @@ fields:
         size: small
         span: auto
         type: richeditor
+    images:
+        label: 'refineriaweb.rwstilhotel::default.label.photos'
+        span: auto
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload

@@ -1,7 +1,7 @@
 <?php namespace Refineriaweb\RwStilhotel\Models;
 
 use Model;
-
+use Refineriaweb\RwStilhotel\Models\Amenity;
 /**
  * Model
  */
@@ -32,16 +32,21 @@ class Hotel extends Model
     public $hasMany=[
         'room' => [
             'Refineriaweb\Rwstilhotel\Models\Room',
-        ]
+        ],
     ];
     public $belongsToMany = [
         'services' => [
             'Refineriaweb\Rwstilhotel\Models\Service',
             'table' => 'refineriaweb_rwstilhotel_hotel_service',
-
         ],
     ];
     public $attachMany = [
         'images' => 'System\Models\File'
     ];
+
+    public function scopeHotel($query){
+        //dd($query, ',asd', $this->id->get());
+        return;
+    }
+
 }

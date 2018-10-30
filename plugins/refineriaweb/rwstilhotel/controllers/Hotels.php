@@ -32,4 +32,17 @@ class Hotels extends Controller
             $model->bindEvent['ProductCategory'] = ['technobrave\productcategory\Models\ProductCategory'];
         });
     }
+    public function index($hotelId = null)
+    {
+        $this->asExtension('ListController')->index();
+    }
+    public function listExtendQuery($query)
+    {
+        dd($query->get());
+//        if ($user->hasAccess('radiantweb.helpdesk.access_helpdesk_all_tickets'))
+//        {
+//            $uID = $user->id;
+//            $query->where('assigned_to', '=', $user->id);
+//        }
+    }
 }

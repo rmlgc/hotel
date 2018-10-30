@@ -1,7 +1,8 @@
 <?php namespace Refineriaweb\RwStilhotel\Models;
 
 use Model;
-
+use Refineriaweb\RwStilhotel\Models\hotel;
+use Refineriaweb\RwStilhotel\Models\hotelService;
 /**
  * Model
  */
@@ -24,7 +25,13 @@ class Service extends Model
             'Refineriaweb\Rwstilhotel\Models\HotelService',
         ],
     ];
-
+    public $attachMany = [
+        'images' => 'System\Models\File'
+    ];
     public $rules = [
     ];
+    public function scopeHotel($query, $hotel){
+        //dd($e->id, $query->get(), $this->get());
+        return $query->where('hotel_id',$hotel->id)->get();
+    }
 }

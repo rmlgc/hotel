@@ -2,3 +2,4 @@ columns:
     name:
         label: name
         type: text
+        searchable: true

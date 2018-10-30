@@ -1,32 +1,45 @@
-fields:
-    name:
-        label: 'refineriaweb.rwstilhotel::default.label.name'
-        span: auto
-        type: text
-    slug:
-        label: 'refineriaweb.rwstilhotel::default.label.slug'
-        span: auto
-        preset:
-            field: name
-            type: slug
-        type: text
-    #hotel:
-    #    label: 'refineriaweb.rwstilhotel::default.label.hotel_name'
-    #    nameFrom: name
-    #    descriptionFrom: description
-    #    span: auto
-    #    type: relation
-    images:
-        label: 'refineriaweb.rwstilhotel::default.label.photos'
-        mode: file
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
-        span: auto
-        type: fileupload
-    descript:
-        label: 'refineriaweb.rwstilhotel::default.label.description'
-        size: large
-        span: full
-        type: richeditor
+tabs:
+    fields:
+        name:
+            label: 'refineriaweb.rwstilhotel::default.label.name'
+            span: auto
+            type: text
+            tab: 'refineriaweb.rwstilhotel::default.label.room'
+        slug:
+            label: 'refineriaweb.rwstilhotel::default.label.slug'
+            span: auto
+            preset:
+                field: name
+                type: slug
+            type: text
+            tab: 'refineriaweb.rwstilhotel::default.label.room'
+        images:
+            label: 'refineriaweb.rwstilhotel::default.label.photos'
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'refineriaweb.rwstilhotel::default.label.room'
+        descript:
+            label: 'refineriaweb.rwstilhotel::default.label.description'
+            size: large
+            span: full
+            type: richeditor
+            tab: 'refineriaweb.rwstilhotel::default.label.room'
+        hotel:
+            label: ''
+            span: auto
+            hidden: 0
+            required: 0
+            disabled: 1
+            type: partial
+            path: field_hotel_id_hide
+            tab: 'refineriaweb.rwstilhotel::default.label.room'
+        amenity:
+            label: 'refineriaweb.rwstilhotel::default.label.amenities'
+            type: partial
+            path: field_amenities
+            tab: 'refineriaweb.rwstilhotel::default.label.amenities'

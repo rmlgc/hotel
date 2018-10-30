@@ -41,8 +41,8 @@ tabs:
             label: 'refineriaweb.rwstilhotel::default.label.services'
             nameFrom: name
             descriptionFrom: description
-            span: auto
-            type: relation
+            type: partial
+            path: field_services
             tab: 'refineriaweb.rwstilhotel::default.label.services'
         room:
             label: 'Room'

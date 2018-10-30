@@ -19,5 +19,8 @@
     - 'relation Room Amenity'
     - migration1011.php
 1.0.8:
-    - 'add hotel_id multisite settings'
+    - 'add hotel_id multisite settings plugin'
     - migration108.php
+1.0.9:
+    - 'add hote_id Services'
+    - migration109.php

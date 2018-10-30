@@ -11,5 +11,7 @@
         'email' => 'email',
         'address' => 'address',
         'hotel_name' => 'hotel name',
+        'amenities' => 'amenities',
+        'room' => 'Room',
     ]
 ];

@@ -1,0 +1,6 @@
+scopes:
+    service:
+        label: service
+        modelClass: Refineriaweb\RwStilhotel\Models\Service
+        conditions: hotel_id in (:filtered)
+        nameFrom: name

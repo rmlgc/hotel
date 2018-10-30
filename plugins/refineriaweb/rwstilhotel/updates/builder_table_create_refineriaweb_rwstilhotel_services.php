@@ -13,6 +13,7 @@ class BuilderTableCreateRefineriawebRwstilhotelServices extends Migration
             $table->increments('id')->unsigned();
             $table->string('name');
             $table->string('slug');
+            $table->integer('hotel_id');
             $table->text('description')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();

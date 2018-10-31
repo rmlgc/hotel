@@ -1,0 +1,4 @@
+title: Categories
+modelClass: Refineriaweb\Gallery\Models\Category
+toolbar:
+    buttons: reorder_toolbar

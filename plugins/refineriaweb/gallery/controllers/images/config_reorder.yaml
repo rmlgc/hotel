@@ -1,0 +1,4 @@
+title: Images
+modelClass: Refineriaweb\Gallery\Models\Image
+toolbar:
+    buttons: reorder_toolbar

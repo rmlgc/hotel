@@ -1,0 +1,11 @@
+name: Photos
+modelClass: Refineriaweb\Gallery\Models\Photo
+form: $/refineriaweb/gallery/models/photo/fields.yaml
+defaultRedirect: refineriaweb/gallery/photos
+create:
+    redirect: 'refineriaweb/gallery/photos/update/:id'
+    redirectClose: refineriaweb/gallery/photos
+update:
+    redirect: refineriaweb/gallery/photos
+    redirectClose: refineriaweb/gallery/photos
+preview: {  }

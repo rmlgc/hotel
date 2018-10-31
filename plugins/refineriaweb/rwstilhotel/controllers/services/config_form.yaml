@@ -1,10 +1,10 @@
 name: Services
 form: $/refineriaweb/rwstilhotel/models/service/fields.yaml
 modelClass: Refineriaweb\RwStilhotel\Models\Service
-defaultRedirect: refineriaweb/rwstilhotel/services
+defaultRedirect: refineriaweb/rwstilhotel/hotels
 create:
     redirect: 'refineriaweb/rwstilhotel/services/update/:id'
-    redirectClose: refineriaweb/rwstilhotel/services
+    redirectClose: refineriaweb/rwstilhotel/hotels/update/:hotel_id
 update:
     redirect: refineriaweb/rwstilhotel/services
-    redirectClose: refineriaweb/rwstilhotel/services
+    redirectClose: refineriaweb/rwstilhotel/hotels/update/:hotel_id

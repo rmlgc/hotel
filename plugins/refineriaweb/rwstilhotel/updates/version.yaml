@@ -24,3 +24,12 @@
 1.0.9:
     - 'add hote_id Services'
     - migration109.php
+1.0.10:
+    - 'add hotel_id gallery photos'
+    - migration_photos_gallery.php
+1.0.11:
+    - 'add published colum to services'
+    - migration1012.php
+1.0.12:
+    - 'add published to gallery image'
+    - migration101201.php

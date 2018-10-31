@@ -1,0 +1,10 @@
+name: Images
+form: $/refineriaweb/gallery/models/image/fields.yaml
+modelClass: Refineriaweb\Gallery\Models\Image
+defaultRedirect: refineriaweb/gallery/images
+create:
+    redirect: 'refineriaweb/gallery/images/update/:id'
+    redirectClose: refineriaweb/gallery/images
+update:
+    redirect: refineriaweb/gallery/images
+    redirectClose: refineriaweb/gallery/images

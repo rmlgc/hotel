@@ -1,0 +1,12 @@
+galleryImage:
+    label: 'refineriaweb.gallery::default.label.image'
+    manage:
+        form: $/refineriaweb/gallery/models/image/fields.yaml
+        list: $/refineriaweb/gallery/models/image/columns.yaml
+        scope: hotel
+    view:
+        list: $/refineriaweb/gallery/models/image/columns.yaml
+        filter: $/refineriaweb/gallery/models/image/config_filter.yaml
+        recordUrl: refineriaweb/gallery/images/update/:id/:hotel_id
+        toolbarButtons: create|remove
+

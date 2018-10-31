@@ -20,10 +20,13 @@ class Service extends Model
      * @var array Validation rules
      */
 
-    public $belongsToMany = [
+    public $belongsTo = [
         'hotel' => [
             'Refineriaweb\Rwstilhotel\Models\HotelService',
         ],
+    ];
+    public $belongsToMany = [
+
     ];
     public $attachMany = [
         'images' => 'System\Models\File'
@@ -32,6 +35,11 @@ class Service extends Model
     ];
     public function scopeHotel($query, $hotel){
         //dd($e->id, $query->get(), $this->get());
-        return $query->where('hotel_id',$hotel->id)->get();
+         return $query->where('hotel_id',$hotel->id)->get();
+    }
+    public function beforeCreate()
+    {
+        //dd($this);
+       // $this->hotel_id = post()['hotel_id'];
     }
 }

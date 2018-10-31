@@ -10,10 +10,6 @@ navigation:
         url: refineriaweb/rwstilhotel/hotels
         icon: icon-building-o
         sideMenu:
-            side-menu-room:
-                label: 'refineriaweb.rwstilhotel::lang.plugin.room'
-                url: refineriaweb/rwstilhotel/rooms
-                icon: icon-codepen
             side-menu-amenitie:
                 label: 'refineriaweb.rwstilhotel::lang.plugin.amenities'
                 url: refineriaweb/rwstilhotel/amenities

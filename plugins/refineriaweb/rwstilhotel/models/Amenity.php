@@ -29,6 +29,6 @@ class Amenity extends Model
     ];
 
     public function scopeHotel($query){
-        dd($query->get());
+        //dd($query->get());
     }
 }

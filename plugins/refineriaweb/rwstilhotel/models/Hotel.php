@@ -2,6 +2,7 @@
 
 use Model;
 use Refineriaweb\RwStilhotel\Models\Amenity;
+use Refineriaweb\Gallery\Models\Photos;
 /**
  * Model
  */
@@ -27,18 +28,27 @@ class Hotel extends Model
     public $hasOne=[
         'setting' => [
             'Keios\Multisite\Models\Setting',
-        ]
+        ],
     ];
     public $hasMany=[
         'room' => [
             'Refineriaweb\Rwstilhotel\Models\Room',
         ],
-    ];
-    public $belongsToMany = [
+        'gallery' => [
+            'Refineriaweb\Gallery\Models\Photo',
+        ],
+        'galleryImage' => [
+            'Refineriaweb\Gallery\Models\Image',
+        ],
         'services' => [
             'Refineriaweb\Rwstilhotel\Models\Service',
-            'table' => 'refineriaweb_rwstilhotel_hotel_service',
         ],
+        'galleryCategory' => [
+            'Refineriaweb\Gallery\Models\Category',
+        ],
+    ];
+    public $belongsToMany = [
+
     ];
     public $attachMany = [
         'images' => 'System\Models\File'
@@ -48,5 +58,9 @@ class Hotel extends Model
         //dd($query, ',asd', $this->id->get());
         return;
     }
-
+    public function beforeCreate()
+    {
+        //dd($this);
+        //$this->hotel_id = post()['hotel_id'];
+    }
 }

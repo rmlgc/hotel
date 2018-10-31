@@ -1,0 +1,10 @@
+name: Categories
+form: $/refineriaweb/gallery/models/category/fields.yaml
+modelClass: Refineriaweb\Gallery\Models\Category
+defaultRedirect: refineriaweb/gallery/categories
+create:
+    redirect: 'refineriaweb/gallery/categories/update/:id'
+    redirectClose: refineriaweb/gallery/categories
+update:
+    redirect: refineriaweb/gallery/categories
+    redirectClose: refineriaweb/gallery/categories

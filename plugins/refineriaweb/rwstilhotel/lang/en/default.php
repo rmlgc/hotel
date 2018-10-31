@@ -13,5 +13,6 @@
         'hotel_name' => 'hotel name',
         'amenities' => 'amenities',
         'room' => 'Room',
+        'gallery' => 'Gallery',
     ]
 ];

@@ -6,5 +6,6 @@ columns:
         sortable: true
     description:
         label: description
-        type: text
+        type: partial
+        path: $/refineriaweb/rwstilhotel/partials/column_description.htm
         searchable: true

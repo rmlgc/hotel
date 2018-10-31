@@ -1,0 +1,39 @@
+fields:
+    name:
+        label: 'refineriaweb.gallery::default.label.title'
+        span: auto
+        type: text
+    slug:
+        label: 'refineriaweb.gallery::default.label.slug'
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    images:
+        label: 'refineriaweb.gallery::default.label.photos'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+    description:
+        label: 'refineriaweb.gallery::default.label.description'
+        size: large
+        span: auto
+        type: richeditor
+secondaryTabs:
+    fields:
+        hotel_published:
+            label: hotel
+            span: auto
+            placeholder: publicar
+            type: switch
+            tab: 'refineriaweb.gallery::default.label.showIn'
+        stilhotels_published:
+            label: stilhotels
+            span: auto
+            type: switch
+            tab: 'refineriaweb.gallery::default.label.showIn'

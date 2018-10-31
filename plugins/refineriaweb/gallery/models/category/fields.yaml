@@ -1,0 +1,78 @@
+tabs:
+    fields:
+        mesageCreate@create:
+            label: 'Info'
+            nameFrom: name
+            descriptionFrom: description
+            type: partial
+            path: field_mesageCreate
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
+        name@create:
+            label: name
+            span: auto
+            type: text
+        slug@create:
+            label: slug
+            span: auto
+            preset:
+                field: name
+                type: slug
+            type: text
+        description@create:
+            label: description
+            span: auto
+            size: ''
+            type: richeditor
+        blank@create:
+            label: 'refineriaweb.gallery::default.label.showIn'
+            span: full
+            type: section
+        hotel_published@create:
+            label: hotel
+            span: auto
+            type: switch
+        stilhotels_published@create:
+            label: Stilhotels
+            span: auto
+            type: switch
+        name@update:
+            label: name
+            span: auto
+            type: text
+            tab: refineriaweb.gallery::default.label.images
+        blank@update:
+            label: 'refineriaweb.gallery::default.label.showIn'
+            span: full
+            type: section
+            tab: refineriaweb.gallery::default.label.images
+        hotel_published@update:
+            label: hotel
+            span: auto
+            type: switch
+            tab: refineriaweb.gallery::default.label.images
+        stilhotels_published@update:
+            label: Stilhotels
+            span: auto
+            type: switch
+            tab: refineriaweb.gallery::default.label.images
+        slug@update:
+            label: slug
+            span: auto
+            preset:
+                field: name
+                type: slug
+            type: text
+            tab: refineriaweb.gallery::default.label.category
+        description@update:
+            label: description
+            span: auto
+            size: ''
+            type: richeditor
+            tab: refineriaweb.gallery::default.label.category
+secondaryTabs:
+    fields:
+        galleryImage@update:
+            label: 'refineriaweb.gallery::default.label.category'
+            type: partial
+            path: field_gallery_Image
+            tab: 'refineriaweb.gallery::default.label.images'

@@ -16,13 +16,17 @@ class Services extends Controller
         parent::__construct();
         BackendMenu::setContext('Refineriaweb.RwStilhotel', 'main-menu-hotel', 'side-menu-services');
     }
+    public function boot()
+    {
+        //dd('asd');
+    }
     public function index($hotelId = null)
     {
         $this->asExtension('ListController')->index();
     }
     public function listExtendQuery($query)
     {
-        dd($query->get());
+        //dd($query->get());
 //        if ($user->hasAccess('radiantweb.helpdesk.access_helpdesk_all_tickets'))
 //        {
 //            $uID = $user->id;

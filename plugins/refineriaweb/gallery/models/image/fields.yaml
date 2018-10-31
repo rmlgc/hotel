@@ -1,0 +1,41 @@
+fields:
+    name:
+        label: name
+        span: auto
+        type: text
+    slug:
+        label: slug
+        span: auto
+        type: text
+    category:
+        label: 'refineriaweb.gallery::default.label.category'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    description:
+        label: 'Rich editor'
+        size: ''
+        span: auto
+        type: richeditor
+    image:
+        label: image
+        span: full
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        type: fileupload
+secondaryTabs:
+    fields:
+        hotel_published:
+            label: Switch
+            span: auto
+            type: switch
+            tab: show
+        stilhotels_published:
+            label: Switch
+            span: auto
+            type: switch
+            tab: show

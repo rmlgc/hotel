@@ -15,7 +15,7 @@ room:
         list: $/refineriaweb/rwstilhotel/models/room/columns.yaml
     view:
         list: $/refineriaweb/rwstilhotel/models/room/columns.yaml
-        recordUrl: refineriaweb/rwstilhotel/rooms/update/:id
+        recordUrl: refineriaweb/rwstilhotel/rooms/update/:id/:hotel_id
         toolbarPartial: relation_toolbar_rooms
 services:
     label: 'refineriaweb.rwstilhotel::default.label.services'
@@ -26,6 +26,39 @@ services:
     view:
         list: $/refineriaweb/rwstilhotel/models/service/columns.yaml
         filter: $/refineriaweb/rwstilhotel/models/service/config_filter.yaml
-        recordUrl: refineriaweb/rwstilhotel/services/update/:id
-        toolbarButtons: create|link|unlink
+        recordUrl: refineriaweb/rwstilhotel/services/update/:id/:hotel_id
+        toolbarButtons: create|delete
+gallery:
+    label: 'refineriaweb.gallery::default.label.gallery'
+    manage:
+        form: $/refineriaweb/gallery/models/photo/fields.yaml
+        list: $/refineriaweb/gallery/models/photo/columns.yaml
+        scope: hotel
+    view:
+        list: $/refineriaweb/gallery/models/photo/columns.yaml
+        filter: $/refineriaweb/gallery/models/photo/config_filter.yaml
+        recordUrl: refineriaweb/gallery/photos/update/:id/:hotel_id
+        toolbarButtons: create|remove
+galleryCategory:
+    label: 'refineriaweb.gallery::default.label.category'
+    manage:
+        form: $/refineriaweb/gallery/models/category/fields.yaml
+        list: $/refineriaweb/gallery/models/category/columns.yaml
+        scope: hotel
+    view:
+        list: $/refineriaweb/gallery/models/category/columns.yaml
+        filter: $/refineriaweb/gallery/models/category/config_filter.yaml
+        recordUrl: refineriaweb/gallery/categories/update/:id/:hotel_id
+        toolbarButtons: create|remove
+galleryImage:
+    label: 'refineriaweb.gallery::default.label.image'
+    manage:
+        form: $/refineriaweb/gallery/models/image/fields.yaml
+        list: $/refineriaweb/gallery/models/image/columns.yaml
+        scope: hotel
+    view:
+        list: $/refineriaweb/gallery/models/image/columns.yaml
+        filter: $/refineriaweb/gallery/models/image/config_filter.yaml
+        recordUrl: refineriaweb/gallery/images/update/:id/:hotel_id
+        toolbarButtons: create|remove
 

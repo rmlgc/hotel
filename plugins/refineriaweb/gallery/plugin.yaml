@@ -1,0 +1,6 @@
+plugin:
+    name: 'refineriaweb.gallery::lang.plugin.name'
+    description: 'refineriaweb.gallery::lang.plugin.description'
+    author: refineriaweb
+    icon: oc-icon-image
+    homepage: ''

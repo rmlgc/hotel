@@ -1,5 +1,45 @@
 tabs:
     fields:
+        room@update:
+            label: 'Room'
+            type: partial
+            path: field_rooms
+            tab: 'Room'
+        images@update:
+            label: 'refineriaweb.gallery::default.label.photos'
+            mode: file
+            imageWidth: 160
+            imageHeight: 160
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: full
+            hidden: 1
+            type: fileupload
+            tab: 'refineriaweb.rwstilhotel::default.label.photos'
+        galleryCategory@update:
+            label: 'refineriaweb.gallery::default.label.category'
+            type: partial
+            path: field_gallery_category
+            tab: 'refineriaweb.rwstilhotel::default.label.photos'
+        galleryImage@update:
+            label: 'refineriaweb.gallery::default.label.images'
+            type: partial
+            path: field_gallery_Image
+            tab: 'refineriaweb.rwstilhotel::default.label.photos'
+        settings@update:
+            label: 'url'
+            type: partial
+            path: field_settings
+            tab: 'url'
+        mesageCreate@create:
+            label: 'Info'
+            nameFrom: name
+            descriptionFrom: description
+            type: partial
+            path: field_mesageCreate
+            tab: 'refineriaweb.rwstilhotel::default.label.hotel'
         name:
             label: 'refineriaweb.rwstilhotel::default.label.name'
             span: auto
@@ -37,32 +77,10 @@ tabs:
                 type: slug
             type: text
             tab: 'refineriaweb.rwstilhotel::default.label.hotel'
-        services:
+        services@update:
             label: 'refineriaweb.rwstilhotel::default.label.services'
             nameFrom: name
             descriptionFrom: description
             type: partial
             path: field_services
             tab: 'refineriaweb.rwstilhotel::default.label.services'
-        room:
-            label: 'Room'
-            type: partial
-            path: field_rooms
-            tab: 'Room'
-        images:
-            label: 'refineriaweb.rwstilhotel::default.label.photos'
-            mode: file
-            imageWidth: 160
-            imageHeight: 160
-            useCaption: true
-            thumbOptions:
-                mode: crop
-                extension: auto
-            span: full
-            type: fileupload
-            tab: 'refineriaweb.rwstilhotel::default.label.photos'
-        settings:
-            label: 'url'
-            type: partial
-            path: field_settings
-            tab: 'url'

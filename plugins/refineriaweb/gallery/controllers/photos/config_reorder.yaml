@@ -1,0 +1,4 @@
+title: Photos
+modelClass: Refineriaweb\Gallery\Models\Photos
+toolbar:
+    buttons: reorder_toolbar
